@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView
+        BackgroundColor="Black"
+        >
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <VerticalStackLayout/>
+
+            <Label
+                Text="Aplicação Teste"
+                TextColor="#e0e0e0"
+                FontAttributes="Bold"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <FlexLayout
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+                
+                <Label
+                    x:Name="ID"
+                    Text="ID:"
+                    TextColor="#e0e0e0"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level2"
+                    FlexLayout.Basis="Auto" />
+
+                <Entry
+                    x:Name="EntryID"
+                    TextColor="#e0e0e0"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level2"
+                    FlexLayout.Basis="90%"/>
+            </FlexLayout>
+
+            <FlexLayout
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+                
+                <Label
+                    x:Name="Pass"
+                    Text="Pass:"
+                    TextColor="#e0e0e0"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    FlexLayout.Basis="Auto"/>
+
+                <Entry
+                    x:Name="EntryPassword"
+                    IsPassword="True"
+                    TextColor="#e0e0e0"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level2"
+                    FlexLayout.Basis="85%"/>
+            </FlexLayout>
+            
+            <VerticalStackLayout
+                FlowDirection="LeftToRight"
+                MinimumHeightRequest="30" />
+
+            <Button
+                x:Name="BtnOK"
+                Text="OK"
+                TextColor="Red"
+                FontSize="20"
+                FontAttributes="Bold"
+                Clicked="Login"
+                BackgroundColor="#cccccc"
+                HorizontalOptions="Fill"
+                SemanticProperties.HeadingLevel="Level2" />
+            
+            <Button
+                x:Name="BtnLimpar"
+                Text="Limpar"
+                TextColor="Red"
+                FontSize="20"
+                FontAttributes="Bold"
+                Clicked="Clean"
+                BackgroundColor="#cccccc"
+                HorizontalOptions="Fill"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Button
+                x:Name="BtnCredits"
+                Text="Créditos"
+                Clicked="Credits"
+                TextColor="Red"
+                FontSize="20"
+                BackgroundColor="#cccccc"
+                FontAttributes="Bold" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
