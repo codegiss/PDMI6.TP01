@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
+    // Giselle Souza - CB3020339
+    // Lucas Gomes - CB3021777
 
     <ScrollView
         BackgroundColor="Black"

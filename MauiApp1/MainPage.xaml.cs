@@ -8,6 +8,8 @@ namespace MauiApp1
         {
             InitializeComponent();
         }
+        // Giselle Souza - CB3020339
+        // Lucas Gomes - CB3021777
 
         private async void Login(object sender, EventArgs e)
         {
